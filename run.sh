@@ -18,7 +18,6 @@ echo "      Database Host Address:  $DB_HOST"
 echo "      Database Port number:   $DB_PORT"
 echo "      Database Name:          $DB_NAME"
 echo "      Database Username:      $DB_USER"
-echo "      Database Password:      $DB_PASS"
 echo "========================================================================"
 
 if [ -f /.mysql_db_created ]; then

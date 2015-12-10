@@ -1,7 +1,6 @@
 FROM tutum/apache-php:latest
 MAINTAINER XanderDwyl <janderbacalso@gmail.com>
 
-ENV WORDPRESS_VER 4.4
 WORKDIR /
 
 # install requirements
