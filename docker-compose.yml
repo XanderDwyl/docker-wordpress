@@ -1,0 +1,14 @@
+wordpress:
+  build: .
+  links:
+   - db
+  ports:
+   - "80:80"
+  environment:
+    DB_NAME: loansolutions
+    DB_USER: admin
+    DB_PASS: "wpPassword"
+db:
+  image: tutum/mysql:5.5
+  environment:
+    MYSQL_PASS: "wpPassword"
