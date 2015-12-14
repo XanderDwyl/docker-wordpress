@@ -1,1 +1,1 @@
-# docker-wordpress-stackable
+# ls-landing-wp

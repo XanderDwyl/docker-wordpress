@@ -19,6 +19,7 @@ $wp_file_descriptions = array(
 	'editor-style-rtl.css' => __( 'Visual Editor RTL Stylesheet' ),
 	'rtl.css' => __( 'RTL Stylesheet' ),
 	'comments.php' => __( 'Comments' ),
+	'comments-popup.php' => __( 'Popup Comments' ),
 	'footer.php' => __( 'Theme Footer' ),
 	'header.php' => __( 'Theme Header' ),
 	'sidebar.php' => __( 'Sidebar' ),
@@ -44,7 +45,6 @@ $wp_file_descriptions = array(
 	'wp-layout.css' => __( 'Stylesheet' ),
 	'wp-comments.php' => __( 'Comments Template' ),
 	'wp-comments-popup.php' => __( 'Popup Comments Template' ),
-	'comments-popup.php' => __( 'Popup Comments' ),
 );
 
 /**
@@ -184,7 +184,7 @@ function wp_tempnam( $filename = '', $dir = '' ) {
 /**
  * Make sure that the file that was requested to edit, is allowed to be edited
  *
- * Function will die if you are not allowed to edit the file
+ * Function will die if if you are not allowed to edit the file
  *
  * @since 1.5.0
  *
