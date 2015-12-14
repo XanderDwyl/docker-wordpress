@@ -14,6 +14,7 @@ RUN a2enmod rewrite
 
 # setup wordpress
 ADD ./wordpress /app
+ADD ./config/wp-config.php /app/wp-config.php
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
