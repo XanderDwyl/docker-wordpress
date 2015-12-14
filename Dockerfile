@@ -5,7 +5,7 @@ WORKDIR /
 
 # install requirements
 RUN apt-get update && \
-    apt-get -yq install mysql-client curl && \
+    apt-get -yq install mysql-client curl sendmail && \
     rm -rf /app && \
 	rm -rf /var/lib/apt/lists/*
 
