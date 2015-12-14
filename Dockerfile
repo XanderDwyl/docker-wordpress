@@ -18,6 +18,9 @@ ADD ./config/wp-config.php /app/wp-config.php
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
+# setup db
+ADD ./db/db_ls.sql /db_ls.sql
+
 # Expose environment variables
 ENV DB_HOST **LinkMe**
 ENV DB_PORT **LinkMe**
