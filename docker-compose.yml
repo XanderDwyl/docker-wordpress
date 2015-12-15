@@ -8,6 +8,7 @@ wordpress:
     DB_NAME: loansolutions
     DB_USER: admin
     DB_PASS: "wpPassword"
+    ENV    : "dev"
 db:
   image: tutum/mysql:5.5
   environment:

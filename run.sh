@@ -18,6 +18,7 @@ echo "      Database Host Address:  $DB_HOST"
 echo "      Database Port number:   $DB_PORT"
 echo "      Database Name:          $DB_NAME"
 echo "      Database Username:      $DB_USER"
+echo "      Environment:            $ENV"
 echo "========================================================================"
 
 if [ -f /.mysql_db_created ]; then
@@ -44,17 +45,20 @@ if [[ $DB_CONNECTABLE -eq 0 ]]; then
             echo "Cannot create database for wordpress"
             exit RET
         fi
-        if [ -f /loansolutions.sql ]; then
-            echo "=> Loading initial database data to $DB_NAME"
-            RET=$(mysql -u$DB_USER -p$DB_PASS -h$DB_HOST -P$DB_PORT $DB_NAME < /loansolutions.sql)
-            if [[ RET -ne 0 ]]; then
-                echo "Cannot load initial database data for wordpress"
-                exit RET
-            fi
-        fi
         echo "=> Done!"
     else
         echo "=> Skipped creation of database $DB_NAME – it already exists."
+    fi
+
+    if [ -f /dev.sql ] && [ -f /staging.sql ] && [ -f /production.sql ]; then
+        echo "=> Loading initial database data to $DB_NAME"
+        RET=$(mysql -u$DB_USER -p$DB_PASS -h$DB_HOST -P$DB_PORT $DB_NAME < /$ENV.sql)
+        echo "Successfully load initial db for - $ENV"
+
+        if [[ RET -ne 0 ]]; then
+            echo "Cannot load initial database data for wordpress"
+            exit RET
+        fi
     fi
 else
     echo "Cannot connect to Mysql"

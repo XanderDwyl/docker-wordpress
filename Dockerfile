@@ -19,7 +19,9 @@ ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 # setup db
-ADD ./db/loansolutions.sql /loansolutions.sql
+ADD ./db/dev.sql /dev.sql
+ADD ./db/staging.sql /staging.sql
+ADD ./db/production.sql /production.sql
 
 # Expose environment variables
 ENV DB_HOST **LinkMe**
