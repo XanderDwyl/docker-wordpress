@@ -1,7 +1,7 @@
 # WordPress MySQL database migration
 #
-# Generated: Tuesday 15. December 2015 08:44 UTC
-# Hostname: 172.17.0.97:3306
+# Generated: Tuesday 15. December 2015 10:01 UTC
+# Hostname: localhost
 # Database: `loansolutions`
 # --------------------------------------------------------
 
@@ -149,7 +149,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=217 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=258 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -194,8 +194,8 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (36, 'gmt_offset', '0', 'yes'),
 (37, 'default_email_category', '1', 'yes'),
 (38, 'recently_edited', '', 'no'),
-(39, 'template', 'regina-lite', 'yes'),
-(40, 'stylesheet', 'regina-lite', 'yes'),
+(39, 'template', 'ls-theme', 'yes'),
+(40, 'stylesheet', 'ls-theme-child', 'yes'),
 (41, 'comment_whitelist', '1', 'yes'),
 (42, 'blacklist_keys', '', 'no'),
 (43, 'comment_registration', '0', 'yes'),
@@ -252,26 +252,31 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (94, 'widget_recent-comments', 'a:2:{i:2;a:2:{s:5:"title";s:0:"";s:6:"number";i:5;}s:12:"_multiwidget";i:1;}', 'yes'),
 (95, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (96, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
-(97, 'sidebars_widgets', 'a:7:{s:19:"wp_inactive_widgets";a:0:{}s:12:"blog-sidebar";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:16:"footer-sidebar-1";N;s:16:"footer-sidebar-2";N;s:16:"footer-sidebar-3";N;s:16:"footer-sidebar-4";N;s:13:"array_version";i:3;}', 'yes'),
+(97, 'sidebars_widgets', 'a:8:{s:19:"wp_inactive_widgets";a:0:{}s:20:"widget-area-partners";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:21:"widget-area-sidebar-1";N;s:16:"widget-area-home";N;s:20:"widget-area-footer-1";N;s:20:"widget-area-footer-2";N;s:20:"widget-area-footer-3";N;s:13:"array_version";i:3;}', 'yes'),
 (100, 'widget_pages', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (101, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (102, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes') ;
 INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (103, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(104, 'cron', 'a:4:{i:1450088062;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450088079;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450121760;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}s:7:"version";i:2;}', 'yes'),
+(104, 'cron', 'a:4:{i:1450174462;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450174479;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450208160;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}s:7:"version";i:2;}', 'yes'),
 (113, 'can_compress_scripts', '0', 'yes'),
 (140, 'recently_activated', 'a:0:{}', 'yes'),
-(161, 'current_theme', 'Regina Lite', 'yes'),
+(161, 'current_theme', 'Loansolutions - Child Theme', 'yes'),
 (162, 'theme_mods_quality-orange', 'a:2:{i:0;b:0;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1450162930;s:4:"data";a:2:{s:19:"wp_inactive_widgets";a:0:{}s:15:"sidebar-primary";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}}}}', 'yes'),
 (163, 'theme_switched', '', 'yes'),
 (165, 'theme_mods_quality', 'a:2:{i:0;b:0;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1450168893;s:4:"data";a:2:{s:19:"wp_inactive_widgets";a:0:{}s:15:"sidebar-primary";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}}}}', 'yes'),
 (198, 'theme_mods_twentysixteen', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1450168780;s:4:"data";a:2:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}}}}', 'yes'),
-(202, 'theme_mods_regina-lite', 'a:1:{i:0;b:0;}', 'yes'),
+(202, 'theme_mods_regina-lite', 'a:2:{i:0;b:0;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1450173458;s:4:"data";a:6:{s:19:"wp_inactive_widgets";a:0:{}s:12:"blog-sidebar";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:16:"footer-sidebar-1";N;s:16:"footer-sidebar-2";N;s:16:"footer-sidebar-3";N;s:16:"footer-sidebar-4";N;}}}', 'yes'),
 (203, 'widget_regina_lite_recent_posts', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (204, 'widget_regina_lite_categories', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (205, 'widget_regina_lite_recent_comments', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (206, 'widget_regina_lite_contact', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(207, 'widget_regina_lite_address', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes') ;
+(207, 'widget_regina_lite_address', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
+(243, 'theme_mods_ls-theme-child', 'a:1:{i:0;b:0;}', 'yes'),
+(244, 'listify_version', '1.0.0', 'yes'),
+(247, 'widget_listify_widget_ad', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
+(248, 'widget_listify_widget_features', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
+(249, 'widget_listify_widget_feature_callout', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes') ;
 
 #
 # End of data contents of table `wp_options`
@@ -543,7 +548,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:3:{s:64:"19a3851a9591d42f2833b0fd613e82c005d55b804736428a6297c0a1dde5c53c";a:4:{s:10:"expiration";i:1450260879;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450088079;}s:64:"bc99a5c4d91418c24a99b2b054d77df29f6da8e9fd9c841431fedfaf4370f3f9";a:4:{s:10:"expiration";i:1450335525;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450162725;}s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}}'),
+(14, 1, 'session_tokens', 'a:4:{s:64:"19a3851a9591d42f2833b0fd613e82c005d55b804736428a6297c0a1dde5c53c";a:4:{s:10:"expiration";i:1450260879;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450088079;}s:64:"bc99a5c4d91418c24a99b2b054d77df29f6da8e9fd9c841431fedfaf4370f3f9";a:4:{s:10:"expiration";i:1450335525;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450162725;}s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"649d5c407a10274b920829534d06aea56735bf744e0b4d6965e4de2d59504f49";a:4:{s:10:"expiration";i:1450346241;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450173441;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'wporg_favorites', ''),
 (17, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),

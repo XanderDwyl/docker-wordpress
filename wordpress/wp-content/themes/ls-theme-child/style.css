@@ -1,0 +1,379 @@
+/*
+Theme Name: Loansolutions - Child Theme
+Theme URI:
+Author: Loansolutions
+Author URI:
+Description: Your beautiful handcrafted directory.
+Version: 1.0.0
+Template: ls-theme
+*/
+@import url(../listify/css/style.min.css);
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("fonts/fontawesome/fontawesome-webfont.eot");
+    src: url("fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome/fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'brandon_reg';
+    src: url("fonts/brandon-grotesque-regular/brandon_reg.eot");
+    src: url("fonts/brandon-grotesque-regular/brandon_reg.eot?#iefix") format("embedded-opentype"), url("fonts/brandon-grotesque-regular/brandon_reg.woff") format("woff"), url("fonts/brandon-grotesque-regular/brandon_reg.ttf") format("truetype"), url("fonts/brandon-grotesque-regular/brandon_reg.svg#brandon_reg") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'brandon_med';
+    src: url("fonts/brandon-grotesque-medium/brandon_med.eot");
+    src: url("fonts/brandon-grotesque-medium/brandon_med.eot?#iefix") format("embedded-opentype"), url("fonts/brandon-grotesque-medium/brandon_med.woff") format("woff"), url("fonts/brandon-grotesque-medium/brandon_med.ttf") format("truetype"), url("fonts/brandon-grotesque-medium/brandon_med.svg#brandon_med") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'brandon_bld';
+    src: url("fonts/brandon-grotesque-bold/brandon_bld.eot");
+    src: url("fonts/brandon-grotesque-bold/brandon_bld.eot?#iefix") format("embedded-opentype"), url("fonts/brandon-grotesque-bold/brandon_bld.woff") format("woff"), url("fonts/brandon-grotesque-bold/brandon_bld.ttf") format("truetype"), url("fonts/brandon-grotesque-bold/brandon_bld.svg#brandon_bld") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'brandon_blk';
+    src: url("fonts/brandon-grotesque-black/brandon_blk.eot");
+    src: url("fonts/brandon-grotesque-black/brandon_blk.eot?#iefix") format("embedded-opentype"), url("fonts/brandon-grotesque-black/brandon_blk.woff") format("woff"), url("fonts/brandon-grotesque-black/brandon_blk.ttf") format("truetype"), url("fonts/brandon-grotesque-black/brandon_blk.svg#brandon_blk") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'sentinellight';
+    src: url("fonts/sentinel-light/sentinellight.eot");
+    src: url("fonts/sentinel-light/sentinellight.eot?#iefix") format("embedded-opentype"), url("fonts/sentinel-light/sentinellight.woff") format("woff"), url("fonts/sentinel-light/sentinellight.ttf") format("truetype"), url("fonts/sentinel-light/sentinellight.svg#sentinellight") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'sentinel_black';
+    src: url("fonts/sentinel-black/sentinel-black.eot");
+    src: url("fonts/sentinel-black/sentinel-black.eot?#iefix") format("embedded-opentype"), url("fonts/sentinel-black/sentinel-black.woff") format("woff"), url("fonts/sentinel-black/sentinel-black.ttf") format("truetype"), url("fonts/sentinel-black/sentinel-black.svg#sentinel-black") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'sentinelmedium';
+    src: url("fonts/sentinel-medium/sentinelmedium.eot");
+    src: url("fonts/sentinel-medium/sentinelmedium.eot?#iefix") format("embedded-opentype"), url("fonts/sentinel-medium/sentinelmedium.woff") format("woff"), url("fonts/sentinel-medium/sentinelmedium.ttf") format("truetype"), url("fonts/sentinel-medium/sentinelmedium.svg#sentinelmedium") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'nlicons';
+    src: url("fonts/nlicons/nlicons.eot");
+    src: url("fonts/nlicons/nlicons.eot?#iefix") format("embedded-opentype"), url("fonts/nlicons/nlicons.woff") format("woff"), url("fonts/nlicons/nlicons.ttf") format("truetype"), url("fonts/nlicons/nlicons.svg#nlicons") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/lato/Lato-Regular.eot");
+    src: url("fonts/lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/lato/Lato-Regular.woff") format("woff"), url("fonts/lato/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'jrhand';
+    src: url("fonts/jrhand/jrhand.eot");
+    src: url("fonts/jrhand/jrhand.eot?#iefix") format("embedded-opentype"), url("fonts/jrhand/jrhand.woff") format("woff"), url("fonts/jrhand/jrhand.svg#jrhand") format("svg");
+    font-style: normal;
+    font-weight: normal
+}
+
+
+
+
+.lead { font-size:16px; }
+.text-center { text-align:center; }
+body { background-color:#F5FCF9; color:#364347; font-family: "Oxygen","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 400; }
+h1,h2,h3,h4,h5,h6 { font-family: "brandon_med",Helvetica,Arial,sans-serif; border:none !important; text-transform:uppercase; letter-spacing:2px; line-height: 1.1; margin:0; }
+ul, ol { font-size: 14px; line-height: 24px; margin:0 0 24px 40px; }
+ul li, ol li { margin:0 0 10px 0; }
+h1.cover-wrapper { font-size:40px; font-family:"brandon_med",Helvetica,Arial,sans-serif; color:#FFF; font-weight:400; text-shadow:none;  padding: 5em 0; line-height:44px; }
+.row h2, .entry-content h2, h2 { font-size: 28px; line-height: 44px; }
+.entry-content h2 { margin:20px 0 10px 0; padding:0; }
+p, .pure-text-centered p { font-family: "Oxygen","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14px; margin: 0 0 10px; line-height:24px; }
+.content-area, .content-area article { margin-bottom:0; }
+.secondary.nav-menu { float:right; }
+.secondary.nav-menu a { color: #455a64; font-family: "brandon_reg",Helvetica,Arial,sans-serif; font-size: 14px; text-transform: uppercase; }
+.site-content { background-color:#FFF; padding-bottom:80px; }
+.main-navigation { border-bottom:1px solid #e3e6e7; }
+.logo-light { width:270px; margin-top:10px; }
+.content-box { background-color:transparent; box-shadow:none; }
+.content-box-inner { padding:0 !important; }
+.loan-boxes h1, h1 { color: #455a64; font-family: "brandon_blk",Helvetica,Arial,sans-serif; font-size: 55px; letter-spacing: 1px; line-height: normal; margin-bottom: 0; text-transform: uppercase; }
+h2.lead { font:italic 400 20px "PT Serif","Times New Roman",serif; color: #5e696d; margin:0; padding: 5px 0 20px; letter-spacing:0; text-transform:inherit; border:none; }
+
+/* Home Loan Boxes */
+.fullscreen-elements { -webkit-background-size: contain; -moz-background-size: contain; -ms-background-size: contain; -o-background-size: contain;   background-size: contain; background: #F5FCF9 url("img/cityscape.png") no-repeat center 101%; padding-bottom:30px; }
+.loan-boxes h4.media-heading { font-size: 22px; margin: 0; padding:0; color: #455a64; font-family: "brandon_bld", Helvetica, Arial, sans-serif; text-transform: uppercase; border:none; }
+.loan-boxes p { font-size: 18px; font-family: 'PT Serif', serif; }
+.loan-boxes .panel-body { padding: 20px; }
+.loan-boxes .panel-default { height: 210px; border: 2px solid #ddd; box-shadow: none; }
+.loan-boxes ul { margin-bottom: 0; }
+.thumbnail-panel { -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; border: 2px solid #ddd; min-height: 204px; background-color: #fff; margin-bottom: 30px; }
+.thumbnail-panel .media .media-left img { max-width: 200px; max-height: 200px; }
+.thumbnail-panel:hover { border-color: #2ccd96; transform: scale(1.05); background: #fffdee; cursor: pointer; }
+.media { margin-top: 15px; }
+.media:first-child { margin-top: 0; }
+.media,
+.media-body {
+    overflow: hidden;
+    zoom: 1
+}
+
+.media-body {
+    width: 10000px
+}
+
+.media-object.img-thumbnail {
+    max-width: none
+}
+
+.media-right,
+.media>.pull-right {
+    padding-left: 10px
+}
+
+.media-left,
+.media>.pull-left {
+    padding-right: 10px
+}
+
+.media-body,
+.media-left,
+.media-right {
+    display: table-cell;
+    vertical-align: top
+}
+
+.media-middle {
+    vertical-align: middle
+}
+
+.media-bottom {
+    vertical-align: bottom
+}
+
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.media-list {
+    padding-left: 0;
+    list-style: none
+}
+
+.media-body {
+    padding: 5px 10px;
+}
+.media-left, .media-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Home 2nd Section */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden
+}
+
+section.pad-large {
+    padding-top: 160px;
+    padding-bottom: 160px
+}
+
+section.duplicatable-content {
+    padding-bottom: 40px
+}
+
+section:nth-of-type(odd) {
+    background: #FFF
+}
+
+section:nth-of-type(even) {
+    background: #fff
+}
+
+.requirements .feature {
+	font-size:16px;
+	line-height:22px;
+	padding:0 10px;
+}
+
+
+.feature {
+    overflow: hidden
+}
+
+.feature h4 {
+    font-weight: 600
+}
+
+.feature i {
+    color: #00bd72
+}
+
+.feature-icon-large i {
+    display: block;
+    height: 104px;
+    width: 104px;
+    border: 2px solid #00bd72;
+    border-radius: 50%;
+    text-align: center;
+    color: #00bd72;
+    font-size: 40px;
+    padding-top: 31px;
+    margin:0 auto 32px auto;
+}
+
+.milestones span {
+    font-size: 16px;
+    display: inline-block;
+    width: 100%
+}
+
+
+/*Home Timeline Events*/
+.timeline-event:first-child {
+    margin-top: 64px
+}
+
+.timeline-event {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 64px;
+    margin-bottom: 32px
+}
+
+.timeline-1 h3, .timeline-event h3 { margin:0; padding:0; font-size: 28px; line-height: 44px; }
+
+.timeline-event p { font-size: 18px; line-height: 1.5; }
+
+.timeline-event:nth-child(even) .col-sm-6:first-child {
+    text-align: right
+}
+
+.timeline-event .col-sm-6:first-child {
+    padding-right: 54px
+}
+
+.timeline-event .col-sm-6:last-child {
+    padding-left: 54px
+}
+
+.timeline-event:nth-child(odd) .col-sm-6:first-child {
+    padding-left: 54px;
+    padding-right: 15px
+}
+
+.timeline-event:nth-child(odd) .col-sm-6:last-child {
+    padding-right: 54px;
+    text-align: right;
+    padding-left: 15px
+}
+
+.timeline-event .middle {
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    margin-left: -30px;
+    text-align: center;
+    height: 100%
+}
+
+.timeline-event .middle i {
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #00bd72
+}
+
+.timeline-event .middle .vertical-line {
+    top: 60px;
+    width: 2px;
+    height: 100%;
+    display: inline-block;
+    background: #00bd72;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px
+}
+
+.timeline-event h2 {
+    margin-bottom: 8px
+}
+
+.btn-wrapper { text-align:center; }
+
+
+/*Landing Pages*/
+.ls-page-wrap { background-color:#F5FCF9; }
+.ls-pages h1 { color: #455a64; font-family: "brandon_blk",Helvetica,Arial,sans-serif; font-size: 2.1vw; line-height: 1.25; margin-bottom: 20px; }
+.ls-pages p { font-size: 18px; color:#364347; line-height:30px; margin-bottom: 30px; }
+.ls-contents h2 { font-size: 28px; line-height: 44px; margin-bottom:30px; text-align:center; }
+.ls-contents p { font-size: 16px; line-height: 30px; font-weight: 400; margin-bottom:20px; }
+
+/* Our Story */
+.content-area { padding:0 0 80px 0; }
+.container-narrow { max-width: 730px; }
+.ls-team { background-color:#f5fcf9 !important; }
+/*Footer*/
+footer { padding-bottom: 80px; padding-top: 80px; }
+
+footer.details .logo {
+    margin-bottom: 40px;
+    margin-top: 0;
+    max-width: 250px;
+}
+
+footer.details {
+    background: #2ccd96;
+    color: #fff
+}
+
+footer.details .standard-h1,
+footer.details h1 {
+    font-weight: normal;
+    font-family: "brandon_med", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 40px
+}
+
+footer.details address {
+    color: rgba(255, 255, 255, 0.85);
+    font-style:normal;
+    font-size:14px;
+}
+
+.footer-container .details p a {
+    color: #fff;
+    text-transform: uppercase
+}
+
+
+
+
+
