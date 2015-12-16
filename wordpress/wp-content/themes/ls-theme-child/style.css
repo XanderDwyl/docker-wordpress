@@ -7,7 +7,7 @@ Description: Your beautiful handcrafted directory.
 Version: 1.0.0
 Template: ls-theme
 */
-@import url(../listify/css/style.min.css);
+@import url(../ls-theme/css/style.min.css);
 @font-face {
     font-family: 'FontAwesome';
     src: url("fonts/fontawesome/fontawesome-webfont.eot");
@@ -101,6 +101,7 @@ Template: ls-theme
 
 .lead { font-size:16px; }
 .text-center { text-align:center; }
+img { max-width:100%; }
 body { background-color:#F5FCF9; color:#364347; font-family: "Oxygen","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 400; }
 h1,h2,h3,h4,h5,h6 { font-family: "brandon_med",Helvetica,Arial,sans-serif; border:none !important; text-transform:uppercase; letter-spacing:2px; line-height: 1.1; margin:0; }
 ul, ol { font-size: 14px; line-height: 24px; margin:0 0 24px 40px; }
@@ -112,7 +113,7 @@ p, .pure-text-centered p { font-family: "Oxygen","Helvetica Neue",Helvetica,Aria
 .content-area, .content-area article { margin-bottom:0; }
 .secondary.nav-menu { float:right; }
 .secondary.nav-menu a { color: #455a64; font-family: "brandon_reg",Helvetica,Arial,sans-serif; font-size: 14px; text-transform: uppercase; }
-.site-content { background-color:#FFF; padding-bottom:80px; }
+.site-content { background-color:#FFF; /*padding-bottom:80px;*/ }
 .main-navigation { border-bottom:1px solid #e3e6e7; }
 .logo-light { width:270px; margin-top:10px; }
 .content-box { background-color:transparent; box-shadow:none; }
@@ -337,6 +338,60 @@ section:nth-of-type(even) {
 .content-area { padding:0 0 80px 0; }
 .container-narrow { max-width: 730px; }
 .ls-team { background-color:#f5fcf9 !important; }
+
+/* Loan Advisor */
+.loan-advisor .article-heads h6 { font-family: "PT Serif","Times New Roman",serif; font-size: 18px; font-style: italic; font-weight: 700; letter-spacing: normal; text-transform: capitalize; margin-bottom:10px; }
+.loan-advisor .article-heads p { font-size:14px; line-height:24px; }
+.loan-advisor .article-heads p.lead { font-size:16px; line-height:30px; }
+.loan-advisor p.tagline { color: #5e696d; font-family: "PT Serif","Times New Roman",serif; font-size: 24px; font-style: italic; margin:0; }
+.duplicatable-content .feature { margin-bottom:40px; }
+.ls-cont-bot { padding:150px 0; }
+.ls-cont-bot h2 { font-size:26px; }
+.ls-cont-bot p { font-size:16px; font-weight:400; padding:0; margin-top:10px; }
+.blog-snippet-2 {
+    overflow: hidden;
+    margin:0;
+    padding: 0
+}
+
+.blog-snippet-2 li {
+    overflow: hidden;
+    margin-bottom: 40px
+}
+
+.blog-snippet-2 li:last-child {
+    margin-bottom: 0
+}
+
+.blog-snippet-2 li .icon {
+    width: 10%;
+    float: left
+}
+
+.blog-snippet-2 li .icon i {
+    color: #00bd72;
+    font-size: 32px;
+    position: relative;
+    top: 5px
+}
+
+.blog-snippet-2 .title {
+    width: 90%;
+    float: left
+}
+
+.blog-snippet-2 a {
+    color: #333;
+    display: block;
+    font-weight: 600
+}
+
+.blog-snippet-2 .sub {
+    letter-spacing: 0;
+    opacity: .8;
+    font-size: 12px
+}
+
 /*Footer*/
 footer { padding-bottom: 80px; padding-top: 80px; }
 
