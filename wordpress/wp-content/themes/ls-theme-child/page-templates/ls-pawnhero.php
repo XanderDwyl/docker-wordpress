@@ -19,7 +19,7 @@ get_header(); ?>
             <p class="lead space-bottom-medium">Use your Luxury Watches, Jewelry, Designer Handbags, Cameras, Apple Products and other Gadgets to get the money you need fast. No hassle and low interest rates guaranteed.</p><a href="http://pawnhero.ph/?partner=ls&amp;utm_source=LoanSolutions&amp;utm_medium=LoanSolutions&amp;utm_campaign=LoanSolutions" class="btn btn-danger btn-lg js-link-pawnhero">Get your free estimate now &raquo;</a>
           </div>
           <div class="col-md-6 col-sm-12">
-            <iframe width="560" height="360" src="https://www.youtube.com/embed/vcUVZ8joAP8?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="360" src="https://www.youtube.com/embed/vcUVZ8joAP8?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
