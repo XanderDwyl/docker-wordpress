@@ -1,6 +1,6 @@
 # WordPress MySQL database migration
 #
-# Generated: Thursday 17. December 2015 10:41 UTC
+# Generated: Friday 18. December 2015 10:38 UTC
 # Hostname: localhost
 # Database: `loansolutions`
 # --------------------------------------------------------
@@ -150,7 +150,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=795 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=882 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -259,7 +259,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (102, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes') ;
 INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (103, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(104, 'cron', 'a:6:{i:1450380960;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450390462;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450406557;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450432376;a:1:{s:13:"sm_ping_daily";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450433679;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(104, 'cron', 'a:6:{i:1450467360;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450476862;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450492957;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450518776;a:1:{s:13:"sm_ping_daily";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450520079;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (113, 'can_compress_scripts', '0', 'yes'),
 (140, 'recently_activated', 'a:0:{}', 'yes'),
 (161, 'current_theme', 'Loansolutions - Child Theme', 'yes'),
@@ -324,7 +324,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=1494 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1493 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2339,7 +2339,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:3:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"1d9661da1294dd6f5ae42ad771f28b507a051ede0dad3da4c366a422b2298729";a:4:{s:10:"expiration";i:1450403819;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450231019;}s:64:"69babc1bbc9c6537d02152ad67e4f1b693e7510cab13e305691e284a1c3a0b7c";a:4:{s:10:"expiration";i:1450520597;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450347797;}}'),
+(14, 1, 'session_tokens', 'a:3:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"69babc1bbc9c6537d02152ad67e4f1b693e7510cab13e305691e284a1c3a0b7c";a:4:{s:10:"expiration";i:1450520597;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450347797;}s:64:"f2f2c66b73e496733cdb895a45576622e1f3f50189d21881198d31c2d5353423";a:4:{s:10:"expiration";i:1450607866;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450435066;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'wporg_favorites', ''),
 (17, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
