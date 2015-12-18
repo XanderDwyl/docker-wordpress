@@ -1,6 +1,6 @@
 # WordPress MySQL database migration
 #
-# Generated: Friday 18. December 2015 12:19 UTC
+# Generated: Friday 18. December 2015 12:39 UTC
 # Hostname: localhost
 # Database: `loansolutions`
 # --------------------------------------------------------
@@ -150,7 +150,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=1013 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1059 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2345,7 +2345,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:4:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"69babc1bbc9c6537d02152ad67e4f1b693e7510cab13e305691e284a1c3a0b7c";a:4:{s:10:"expiration";i:1450520597;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450347797;}s:64:"f2f2c66b73e496733cdb895a45576622e1f3f50189d21881198d31c2d5353423";a:4:{s:10:"expiration";i:1450607866;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450435066;}s:64:"7c4baf6be1e3942dffc55512d97e2d7df77be3ba7886eb6086a0357ada2988de";a:4:{s:10:"expiration";i:1450613825;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450441025;}}'),
+(14, 1, 'session_tokens', 'a:5:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"69babc1bbc9c6537d02152ad67e4f1b693e7510cab13e305691e284a1c3a0b7c";a:4:{s:10:"expiration";i:1450520597;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450347797;}s:64:"f2f2c66b73e496733cdb895a45576622e1f3f50189d21881198d31c2d5353423";a:4:{s:10:"expiration";i:1450607866;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450435066;}s:64:"7c4baf6be1e3942dffc55512d97e2d7df77be3ba7886eb6086a0357ada2988de";a:4:{s:10:"expiration";i:1450613825;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450441025;}s:64:"3bcc72da75d11e4132997029fe9d8bc7ee363ca8467ccb2854065bfd35ae2121";a:4:{s:10:"expiration";i:1450614817;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450442017;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'wporg_favorites', ''),
 (17, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
