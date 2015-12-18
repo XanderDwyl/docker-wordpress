@@ -1,6 +1,6 @@
 # WordPress MySQL database migration
 #
-# Generated: Friday 18. December 2015 10:39 UTC
+# Generated: Friday 18. December 2015 12:18 UTC
 # Hostname: localhost
 # Database: `loansolutions`
 # --------------------------------------------------------
@@ -150,7 +150,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=896 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=969 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -286,7 +286,6 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (298, 'acf_version', '4.4.4', 'yes'),
 (338, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
 (365, 'category_children', 'a:0:{}', 'yes'),
-(366, 'kbe_taxonomy_children', 'a:0:{}', 'yes'),
 (528, 'wpseo', 'a:21:{s:14:"blocking_files";a:0:{}s:26:"ignore_blog_public_warning";b:0;s:31:"ignore_meta_description_warning";b:0;s:20:"ignore_page_comments";b:0;s:16:"ignore_permalink";b:0;s:15:"ms_defaults_set";b:0;s:23:"theme_description_found";s:0:"";s:21:"theme_has_description";b:0;s:7:"version";s:5:"3.0.6";s:11:"alexaverify";s:0:"";s:12:"company_logo";s:0:"";s:12:"company_name";s:0:"";s:17:"company_or_person";s:0:"";s:20:"disableadvanced_meta";b:1;s:19:"onpage_indexability";b:1;s:12:"googleverify";s:0:"";s:8:"msverify";s:0:"";s:11:"person_name";s:0:"";s:12:"website_name";s:0:"";s:22:"alternate_website_name";s:0:"";s:12:"yandexverify";s:0:"";}', 'yes'),
 (529, 'wpseo_permalinks', 'a:13:{s:15:"cleanpermalinks";b:0;s:24:"cleanpermalink-extravars";s:0:"";s:29:"cleanpermalink-googlecampaign";b:0;s:31:"cleanpermalink-googlesitesearch";b:0;s:15:"cleanreplytocom";b:0;s:10:"cleanslugs";b:1;s:14:"hide-feedlinks";b:0;s:12:"hide-rsdlink";b:0;s:14:"hide-shortlink";b:0;s:16:"hide-wlwmanifest";b:0;s:18:"redirectattachment";b:0;s:17:"stripcategorybase";b:0;s:13:"trailingslash";b:0;}', 'yes'),
 (530, 'wpseo_titles', 'a:75:{s:10:"title_test";i:0;s:17:"forcerewritetitle";b:0;s:9:"separator";s:7:"sc-dash";s:5:"noodp";b:0;s:6:"noydir";b:0;s:15:"usemetakeywords";b:0;s:16:"title-home-wpseo";s:42:"%%sitename%% %%page%% %%sep%% %%sitedesc%%";s:18:"title-author-wpseo";s:41:"%%name%%, Author at %%sitename%% %%page%%";s:19:"title-archive-wpseo";s:38:"%%date%% %%page%% %%sep%% %%sitename%%";s:18:"title-search-wpseo";s:63:"You searched for %%searchphrase%% %%page%% %%sep%% %%sitename%%";s:15:"title-404-wpseo";s:35:"Page not found %%sep%% %%sitename%%";s:19:"metadesc-home-wpseo";s:0:"";s:21:"metadesc-author-wpseo";s:0:"";s:22:"metadesc-archive-wpseo";s:0:"";s:18:"metakey-home-wpseo";s:0:"";s:20:"metakey-author-wpseo";s:0:"";s:22:"noindex-subpages-wpseo";b:0;s:20:"noindex-author-wpseo";b:0;s:21:"noindex-archive-wpseo";b:1;s:14:"disable-author";b:0;s:12:"disable-date";b:0;s:10:"title-post";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:13:"metadesc-post";s:0:"";s:12:"metakey-post";s:0:"";s:12:"noindex-post";b:0;s:13:"showdate-post";b:0;s:16:"hideeditbox-post";b:0;s:10:"title-page";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:13:"metadesc-page";s:0:"";s:12:"metakey-page";s:0:"";s:12:"noindex-page";b:0;s:13:"showdate-page";b:0;s:16:"hideeditbox-page";b:0;s:16:"title-attachment";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:19:"metadesc-attachment";s:0:"";s:18:"metakey-attachment";s:0:"";s:18:"noindex-attachment";b:0;s:19:"showdate-attachment";b:0;s:22:"hideeditbox-attachment";b:0;s:23:"title-kbe_knowledgebase";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:26:"metadesc-kbe_knowledgebase";s:0:"";s:25:"metakey-kbe_knowledgebase";s:0:"";s:25:"noindex-kbe_knowledgebase";b:0;s:26:"showdate-kbe_knowledgebase";b:0;s:29:"hideeditbox-kbe_knowledgebase";b:0;s:33:"title-ptarchive-kbe_knowledgebase";s:51:"%%pt_plural%% Archive %%page%% %%sep%% %%sitename%%";s:36:"metadesc-ptarchive-kbe_knowledgebase";s:0:"";s:35:"metakey-ptarchive-kbe_knowledgebase";s:0:"";s:35:"bctitle-ptarchive-kbe_knowledgebase";s:0:"";s:35:"noindex-ptarchive-kbe_knowledgebase";b:0;s:18:"title-tax-category";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-category";s:0:"";s:20:"metakey-tax-category";s:0:"";s:24:"hideeditbox-tax-category";b:0;s:20:"noindex-tax-category";b:0;s:18:"title-tax-post_tag";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-post_tag";s:0:"";s:20:"metakey-tax-post_tag";s:0:"";s:24:"hideeditbox-tax-post_tag";b:0;s:20:"noindex-tax-post_tag";b:0;s:21:"title-tax-post_format";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:24:"metadesc-tax-post_format";s:0:"";s:23:"metakey-tax-post_format";s:0:"";s:27:"hideeditbox-tax-post_format";b:0;s:23:"noindex-tax-post_format";b:1;s:22:"title-tax-kbe_taxonomy";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:25:"metadesc-tax-kbe_taxonomy";s:0:"";s:24:"metakey-tax-kbe_taxonomy";s:0:"";s:28:"hideeditbox-tax-kbe_taxonomy";b:0;s:24:"noindex-tax-kbe_taxonomy";b:0;s:18:"title-tax-kbe_tags";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-kbe_tags";s:0:"";s:20:"metakey-tax-kbe_tags";s:0:"";s:24:"hideeditbox-tax-kbe_tags";b:0;s:20:"noindex-tax-kbe_tags";b:0;}', 'yes'),
@@ -297,7 +296,8 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (539, 'sm_rewrite_done', '$Id: sitemap-loader.php 937300 2014-06-23 18:04:11Z arnee $', 'yes'),
 (547, 'rewrite_rules', 'a:110:{s:34:"sitemap(-+([a-zA-Z0-9_-]+))?\\.xml$";s:40:"index.php?xml_sitemap=params=$matches[2]";s:38:"sitemap(-+([a-zA-Z0-9_-]+))?\\.xml\\.gz$";s:49:"index.php?xml_sitemap=params=$matches[2];zip=true";s:35:"sitemap(-+([a-zA-Z0-9_-]+))?\\.html$";s:50:"index.php?xml_sitemap=params=$matches[2];html=true";s:38:"sitemap(-+([a-zA-Z0-9_-]+))?\\.html.gz$";s:59:"index.php?xml_sitemap=params=$matches[2];html=true;zip=true";s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:6:"faq/?$";s:37:"index.php?post_type=kbe_knowledgebase";s:36:"faq/feed/(feed|rdf|rss|rss2|atom)/?$";s:54:"index.php?post_type=kbe_knowledgebase&feed=$matches[1]";s:31:"faq/(feed|rdf|rss|rss2|atom)/?$";s:54:"index.php?post_type=kbe_knowledgebase&feed=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:63:"knowledgebase_category/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?kbe_taxonomy=$matches[1]&feed=$matches[2]";s:58:"knowledgebase_category/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?kbe_taxonomy=$matches[1]&feed=$matches[2]";s:51:"knowledgebase_category/([^/]+)/page/?([0-9]{1,})/?$";s:52:"index.php?kbe_taxonomy=$matches[1]&paged=$matches[2]";s:33:"knowledgebase_category/([^/]+)/?$";s:34:"index.php?kbe_taxonomy=$matches[1]";s:59:"knowledgebase_tags/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?kbe_tags=$matches[1]&feed=$matches[2]";s:54:"knowledgebase_tags/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?kbe_tags=$matches[1]&feed=$matches[2]";s:47:"knowledgebase_tags/([^/]+)/page/?([0-9]{1,})/?$";s:48:"index.php?kbe_tags=$matches[1]&paged=$matches[2]";s:29:"knowledgebase_tags/([^/]+)/?$";s:30:"index.php?kbe_tags=$matches[1]";s:31:"faq/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:41:"faq/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:61:"faq/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"faq/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"faq/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:37:"faq/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:20:"faq/([^/]+)/embed/?$";s:50:"index.php?kbe_knowledgebase=$matches[1]&embed=true";s:24:"faq/([^/]+)/trackback/?$";s:44:"index.php?kbe_knowledgebase=$matches[1]&tb=1";s:44:"faq/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:56:"index.php?kbe_knowledgebase=$matches[1]&feed=$matches[2]";s:39:"faq/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:56:"index.php?kbe_knowledgebase=$matches[1]&feed=$matches[2]";s:32:"faq/([^/]+)/page/?([0-9]{1,})/?$";s:57:"index.php?kbe_knowledgebase=$matches[1]&paged=$matches[2]";s:39:"faq/([^/]+)/comment-page-([0-9]{1,})/?$";s:57:"index.php?kbe_knowledgebase=$matches[1]&cpage=$matches[2]";s:28:"faq/([^/]+)(?:/([0-9]+))?/?$";s:56:"index.php?kbe_knowledgebase=$matches[1]&page=$matches[2]";s:20:"faq/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:30:"faq/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:50:"faq/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:45:"faq/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:45:"faq/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:26:"faq/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:12:"robots\\.txt$";s:18:"index.php?robots=1";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:27:"comment-page-([0-9]{1,})/?$";s:40:"index.php?&page_id=677&cpage=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:"[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"([^/]+)/embed/?$";s:37:"index.php?name=$matches[1]&embed=true";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:24:"([^/]+)(?:/([0-9]+))?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:22:"[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";}', 'yes'),
 (646, 'sm_options', 'a:51:{s:18:"sm_b_prio_provider";s:41:"GoogleSitemapGeneratorPrioByCountProvider";s:9:"sm_b_ping";b:1;s:10:"sm_b_stats";b:0;s:12:"sm_b_pingmsn";b:1;s:12:"sm_b_autozip";b:1;s:11:"sm_b_memory";s:0:"";s:9:"sm_b_time";i:-1;s:18:"sm_b_style_default";b:1;s:10:"sm_b_style";s:0:"";s:12:"sm_b_baseurl";s:0:"";s:11:"sm_b_robots";b:1;s:9:"sm_b_html";b:1;s:12:"sm_b_exclude";a:0:{}s:17:"sm_b_exclude_cats";a:0:{}s:10:"sm_in_home";b:1;s:11:"sm_in_posts";b:1;s:15:"sm_in_posts_sub";b:0;s:11:"sm_in_pages";b:1;s:10:"sm_in_cats";b:0;s:10:"sm_in_arch";b:0;s:10:"sm_in_auth";b:0;s:10:"sm_in_tags";b:0;s:9:"sm_in_tax";a:0:{}s:17:"sm_in_customtypes";a:0:{}s:13:"sm_in_lastmod";b:1;s:10:"sm_cf_home";s:5:"daily";s:11:"sm_cf_posts";s:7:"monthly";s:11:"sm_cf_pages";s:6:"weekly";s:10:"sm_cf_cats";s:6:"weekly";s:10:"sm_cf_auth";s:6:"weekly";s:15:"sm_cf_arch_curr";s:5:"daily";s:14:"sm_cf_arch_old";s:6:"yearly";s:10:"sm_cf_tags";s:6:"weekly";s:10:"sm_pr_home";d:1;s:11:"sm_pr_posts";d:0.59999999999999997779553950749686919152736663818359375;s:15:"sm_pr_posts_min";d:0.200000000000000011102230246251565404236316680908203125;s:11:"sm_pr_pages";d:0.59999999999999997779553950749686919152736663818359375;s:10:"sm_pr_cats";d:0.299999999999999988897769753748434595763683319091796875;s:10:"sm_pr_arch";d:0.299999999999999988897769753748434595763683319091796875;s:10:"sm_pr_auth";d:0.299999999999999988897769753748434595763683319091796875;s:10:"sm_pr_tags";d:0.299999999999999988897769753748434595763683319091796875;s:12:"sm_i_donated";b:0;s:17:"sm_i_hide_donated";b:0;s:17:"sm_i_install_date";i:1450344152;s:14:"sm_i_hide_note";b:0;s:15:"sm_i_hide_works";b:0;s:16:"sm_i_hide_donors";b:0;s:9:"sm_i_hash";s:20:"94d06ede62078ddbe0b4";s:13:"sm_i_lastping";i:1450344995;s:16:"sm_i_supportfeed";b:1;s:22:"sm_i_supportfeed_cache";i:1450346001;}', 'yes'),
-(647, 'sm_status', 'O:28:"GoogleSitemapGeneratorStatus":4:{s:39:"\0GoogleSitemapGeneratorStatus\0startTime";d:1450344994.300858020782470703125;s:37:"\0GoogleSitemapGeneratorStatus\0endTime";d:1450344995.0539529323577880859375;s:41:"\0GoogleSitemapGeneratorStatus\0pingResults";a:2:{s:6:"google";a:5:{s:9:"startTime";d:1450344994.3158600330352783203125;s:7:"endTime";d:1450344994.6999089717864990234375;s:7:"success";b:0;s:3:"url";s:95:"http://www.google.com/webmasters/sitemaps/ping?sitemap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:6:"Google";}s:4:"bing";a:5:{s:9:"startTime";d:1450344994.714910030364990234375;s:7:"endTime";d:1450344994.9789440631866455078125;s:7:"success";b:1;s:3:"url";s:88:"http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:4:"Bing";}}s:38:"\0GoogleSitemapGeneratorStatus\0autoSave";b:1;}', 'no') ;
+(647, 'sm_status', 'O:28:"GoogleSitemapGeneratorStatus":4:{s:39:"\0GoogleSitemapGeneratorStatus\0startTime";d:1450344994.300858020782470703125;s:37:"\0GoogleSitemapGeneratorStatus\0endTime";d:1450344995.0539529323577880859375;s:41:"\0GoogleSitemapGeneratorStatus\0pingResults";a:2:{s:6:"google";a:5:{s:9:"startTime";d:1450344994.3158600330352783203125;s:7:"endTime";d:1450344994.6999089717864990234375;s:7:"success";b:0;s:3:"url";s:95:"http://www.google.com/webmasters/sitemaps/ping?sitemap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:6:"Google";}s:4:"bing";a:5:{s:9:"startTime";d:1450344994.714910030364990234375;s:7:"endTime";d:1450344994.9789440631866455078125;s:7:"success";b:1;s:3:"url";s:88:"http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:4:"Bing";}}s:38:"\0GoogleSitemapGeneratorStatus\0autoSave";b:1;}', 'no'),
+(966, 'kbe_taxonomy_children', 'a:0:{}', 'yes') ;
 
 #
 # End of data contents of table `wp_options`
@@ -2216,7 +2216,7 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2224,7 +2224,10 @@ CREATE TABLE `wp_term_taxonomy` (
 #
 INSERT INTO `wp_term_taxonomy` ( `term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 61),
-(2, 2, 'nav_menu', '', 0, 3) ;
+(2, 2, 'nav_menu', '', 0, 3),
+(3, 3, 'kbe_taxonomy', '', 0, 0),
+(4, 4, 'kbe_taxonomy', '', 0, 0),
+(5, 5, 'kbe_taxonomy', '', 0, 0) ;
 
 #
 # End of data contents of table `wp_term_taxonomy`
@@ -2284,7 +2287,7 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2292,7 +2295,10 @@ CREATE TABLE `wp_terms` (
 #
 INSERT INTO `wp_terms` ( `term_id`, `name`, `slug`, `term_group`, `terms_order`) VALUES
 (1, 'Uncategorized', 'uncategorized', 0, 0),
-(2, 'Secondary Menu', 'secondary-menu', 0, 0) ;
+(2, 'Secondary Menu', 'secondary-menu', 0, 0),
+(3, 'General', 'general', 0, 0),
+(4, 'Frequently Ask Questions', 'frequently-ask-questions', 0, 0),
+(5, 'Questions and Answers', 'questions-and-answers', 0, 0) ;
 
 #
 # End of data contents of table `wp_terms`
@@ -2319,7 +2325,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2339,7 +2345,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:3:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"69babc1bbc9c6537d02152ad67e4f1b693e7510cab13e305691e284a1c3a0b7c";a:4:{s:10:"expiration";i:1450520597;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450347797;}s:64:"f2f2c66b73e496733cdb895a45576622e1f3f50189d21881198d31c2d5353423";a:4:{s:10:"expiration";i:1450607866;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450435066;}}'),
+(14, 1, 'session_tokens', 'a:4:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"69babc1bbc9c6537d02152ad67e4f1b693e7510cab13e305691e284a1c3a0b7c";a:4:{s:10:"expiration";i:1450520597;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450347797;}s:64:"f2f2c66b73e496733cdb895a45576622e1f3f50189d21881198d31c2d5353423";a:4:{s:10:"expiration";i:1450607866;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450435066;}s:64:"7c4baf6be1e3942dffc55512d97e2d7df77be3ba7886eb6086a0357ada2988de";a:4:{s:10:"expiration";i:1450613825;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450441025;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'wporg_favorites', ''),
 (17, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
@@ -2347,19 +2353,19 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (19, 1, 'wp_user-settings', 'editor=html&libraryContent=browse&hidetb=1'),
 (20, 1, 'wp_user-settings-time', '1450234849'),
 (21, 1, 'nav_menu_recently_edited', '2'),
-(22, 2, 'nickname', 'john'),
-(23, 2, 'first_name', ''),
-(24, 2, 'last_name', ''),
-(25, 2, 'description', ''),
-(26, 2, 'rich_editing', 'true'),
-(27, 2, 'comment_shortcuts', 'false'),
-(28, 2, 'admin_color', 'fresh'),
-(29, 2, 'use_ssl', '0'),
-(30, 2, 'show_admin_bar_front', 'true'),
-(31, 2, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
-(32, 2, 'wp_user_level', '10'),
-(33, 2, 'dismissed_wp_pointers', ''),
-(34, 1, 'wpseo_ignore_tour', '1') ;
+(34, 1, 'wpseo_ignore_tour', '1'),
+(35, 3, 'nickname', 'john'),
+(36, 3, 'first_name', ''),
+(37, 3, 'last_name', ''),
+(38, 3, 'description', ''),
+(39, 3, 'rich_editing', 'true'),
+(40, 3, 'comment_shortcuts', 'false'),
+(41, 3, 'admin_color', 'fresh'),
+(42, 3, 'use_ssl', '0'),
+(43, 3, 'show_admin_bar_front', 'true'),
+(44, 3, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
+(45, 3, 'wp_user_level', '10'),
+(46, 3, 'dismissed_wp_pointers', '') ;
 
 #
 # End of data contents of table `wp_usermeta`
@@ -2392,7 +2398,7 @@ CREATE TABLE `wp_users` (
   PRIMARY KEY (`ID`),
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2400,7 +2406,7 @@ CREATE TABLE `wp_users` (
 #
 INSERT INTO `wp_users` ( `ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'admin', '$P$B0YldqOPziqeP.BUq2IV4BxUVYybCk1', 'admin', 'alex@loansolutions.ph', '', '2015-12-14 10:12:52', '', 0, 'admin'),
-(2, 'john', '$P$BQ6/kUZiAiKgJh7XbwN5I.bDlBwjIo/', 'john', 'jalaura@loansolutions.ph', '', '2015-12-16 09:32:53', '1450258375:$P$BuiiSDqzfNgYqhHjS27AApcmEqGyhH1', 0, 'john') ;
+(3, 'john', '$P$BKFE9jPWYU0.8dLAjrCufZKP8hSg8Y1', 'john', 'jraalu2000@gmail.com', '', '2015-12-18 10:49:30', '1450435771:$P$BZGCBtDuxPlTSOBPQW7BIpuJ1.ZHa60', 0, 'john') ;
 
 #
 # End of data contents of table `wp_users`
