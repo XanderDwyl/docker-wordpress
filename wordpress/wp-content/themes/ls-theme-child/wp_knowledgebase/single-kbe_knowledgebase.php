@@ -19,6 +19,9 @@
         $kbe_sidebar_class = 'kbe_aside_right';
     }
 ?>
+<div class="page-cover entry-cover has-image" style="background-image: url(../wp-content/uploads/2015/12/blog-thumb-2.jpg);">
+    <h1 class="page-title cover-wrapper"><?php echo get_the_title(KBE_PAGE_TITLE) ?></h1>
+</div>
 <div id="kbe_container">
     <!--Breadcrum-->
     <?php

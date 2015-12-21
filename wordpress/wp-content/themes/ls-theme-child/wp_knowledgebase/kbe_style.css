@@ -129,8 +129,8 @@
 }
 .kbe_content_full{
     width: 980px !important;
-    display: inline-block;
     float: none;
+    margin:0 auto;
 }
 #kbe_content.single-content { display:block !important; margin:0 auto; }
 #kbe_content.single-content h1 { text-align:left; }

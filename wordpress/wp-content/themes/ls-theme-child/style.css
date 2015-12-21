@@ -338,7 +338,73 @@ section:nth-of-type(even) {
 .home-three-steps ul li h3 { font-size:28px; margin:14px 0; }
 .home-three-steps ul li h5 { border-bottom:1px solid #2CCD96 !important; padding-bottom:24px; }
 .home-three-steps ul li p { font-size:18px; line-height:30px; }
-.home-three-steps ul li:nth-child(2) {  }
+
+/* Home Partners */
+.main-container.light .bottom-band {
+    padding: 30px 0;
+    background: #fff
+}
+
+.partners {
+    padding: 30px 0;
+    background: #fff
+}
+
+.partners-roll {
+    margin: 0 auto;
+    background: url("../img/partners.jpg") no-repeat center center;
+    height: 74px
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 2292px 0
+    }
+}
+
+@-webkit-keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 2292px 0
+    }
+}
+
+@-ms-keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 2292px 0
+    }
+}
+
+@-moz-keyframes animatedBackground {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 2292px 0
+    }
+}
+
+.sm-partners-roll {
+    margin: 0 auto;
+    background: url("img/partners.jpg");
+    height: 74px;
+    -moz-transition: background-position 0.5s ease-out;
+    -o-transition: background-position 0.5s ease-out;
+    -webkit-transition: background-position 0.5s ease-out;
+    -ms-transition: background-position 0.5s ease-out;
+    animation: animatedBackground 50s linear infinite;
+    -ms-animation: animatedBackground 50s linear infinite;
+    -moz-animation: animatedBackground 50s linear infinite;
+    -webkit-animation: animatedBackground 50s linear infinite
+}
 
 
 /*Landing Pages*/

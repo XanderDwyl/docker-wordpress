@@ -33,4 +33,14 @@ get_header(); ?>
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-home-three-steps') ) : ?> <?php endif; ?>
 	</div>
 
+	<!-- <div class="partners hidden-xs hidden-sm">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="sm-partners-roll hidden-xs"></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
 <?php get_footer(); ?>

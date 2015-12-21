@@ -25,7 +25,7 @@ if(!empty($_GET['ajax']) ? $_GET['ajax'] : null) {
         while (have_posts()) : the_post();
     ?>
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-            
+
     <?php
         endwhile;
     ?>
@@ -40,6 +40,9 @@ if(!empty($_GET['ajax']) ? $_GET['ajax'] : null) {
 } else {
     get_header('knowledgebase');
 ?>
+<div class="page-cover entry-cover has-image" style="background-image: url(../wp-content/uploads/2015/12/blog-thumb-2.jpg);">
+    <h1 class="page-title cover-wrapper"><?php echo get_the_title(KBE_PAGE_TITLE) ?></h1>
+</div>
     <div id="kbe_container">
 
     <!--Breadcrum-->
@@ -53,7 +56,7 @@ if(!empty($_GET['ajax']) ? $_GET['ajax'] : null) {
         }
     ?>
     <!--/Breadcrum-->
-        
+
     <!--search field-->
     <?php
         if(KBE_SEARCH_SETTING == 1){
@@ -61,13 +64,13 @@ if(!empty($_GET['ajax']) ? $_GET['ajax'] : null) {
         }
     ?>
     <!--/search field-->
-        
+
     <!--content-->
     <div id="kbe_content" <?php echo $kbe_content_class; ?>>
     <?php
         $kbe_search_term = $_GET['s'];
     ?>
-	
+
         <h1><?php _e('Search Results for: '.$kbe_search_term, 'kbe'); ?></h1>
 
         <!--leftcol-->
@@ -104,7 +107,7 @@ if(!empty($_GET['ajax']) ? $_GET['ajax'] : null) {
         <!--/leftcol-->
 
     </div>
-    
+
     <!--aside-->
     <div class="kbe_aside <?php echo $kbe_sidebar_class; ?>">
     <?php
@@ -114,7 +117,7 @@ if(!empty($_GET['ajax']) ? $_GET['ajax'] : null) {
     ?>
     </div>
     <!--/aside-->
-    
+
 </div>
 <?php
     get_footer('knowledgebase');
