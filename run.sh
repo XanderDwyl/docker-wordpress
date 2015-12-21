@@ -21,6 +21,8 @@ echo "      Database Username:      $DB_USER"
 echo "      Environment:            $ENV"
 echo "========================================================================"
 
+echo "Sendmail is Successfully setup." | /usr/sbin/sendmail alex@loansolutions.ph
+
 if [ -f /.mysql_db_created ]; then
         source /etc/apache2/envvars
         exec apache2 -D FOREGROUND

@@ -78,9 +78,20 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+if( getenv('ENV') != 'dev') {
 
-define('WP_ALLOW_REPAIR', true);
+	define('WP_DEBUG', false);
+	/**
+	 * https://ctw-consulting.de/cloudflare-ssl-and-wordpress/
+	 */
+	define('FORCE_SSL_ADMIN', true);
+	if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+		$_SERVER['HTTPS']='on';
+	}
+} else {
+	define('WP_DEBUG', true);
+	define('WP_ALLOW_REPAIR', true);
+}
 
 
 /* That's all, stop editing! Happy blogging. */

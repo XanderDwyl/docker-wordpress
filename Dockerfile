@@ -9,6 +9,11 @@ RUN apt-get update && \
     rm -rf /app && \
 	rm -rf /var/lib/apt/lists/*
 
+# setup sendmail
+# echo "include(`/etc/mail/tls/starttls.m4')dnl" < /etc/mail/submit.mc
+RUN sudo sendmailconfig
+RUN service sendmail restart
+
 RUN sed -i "s/AllowOverride None/AllowOverride All/g" /etc/apache2/apache2.conf
 RUN a2enmod rewrite
 
