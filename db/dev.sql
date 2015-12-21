@@ -1,7 +1,7 @@
 # WordPress MySQL database migration
 #
-# Generated: Monday 21. December 2015 07:10 UTC
-# Hostname: localhost
+# Generated: Monday 21. December 2015 08:18 UTC
+# Hostname: 10.7.0.27:3306
 # Database: `loansolutions`
 # --------------------------------------------------------
 
@@ -150,7 +150,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=1199 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1263 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -259,7 +259,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (102, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes') ;
 INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (103, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(104, 'cron', 'a:7:{i:1450683360;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450691576;a:1:{s:13:"sm_ping_daily";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450692862;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450692879;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450752157;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450764032;a:1:{s:26:"importer_scheduled_cleanup";a:1:{s:32:"e30cb2ebe6a557ece7bc47224db33f79";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:714;}}}}s:7:"version";i:2;}', 'yes'),
+(104, 'cron', 'a:7:{i:1450691576;a:1:{s:13:"sm_ping_daily";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450692862;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450692879;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450726560;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1450752157;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1450764032;a:1:{s:26:"importer_scheduled_cleanup";a:1:{s:32:"e30cb2ebe6a557ece7bc47224db33f79";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:714;}}}}s:7:"version";i:2;}', 'yes'),
 (113, 'can_compress_scripts', '0', 'yes'),
 (140, 'recently_activated', 'a:0:{}', 'yes'),
 (161, 'current_theme', 'Loansolutions - Child Theme', 'yes'),
@@ -293,8 +293,8 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (533, 'wpseo_internallinks', 'a:13:{s:20:"breadcrumbs-404crumb";s:25:"Error 404: Page not found";s:23:"breadcrumbs-blog-remove";b:0;s:20:"breadcrumbs-boldlast";b:0;s:25:"breadcrumbs-archiveprefix";s:12:"Archives for";s:18:"breadcrumbs-enable";b:0;s:16:"breadcrumbs-home";s:4:"Home";s:18:"breadcrumbs-prefix";s:0:"";s:24:"breadcrumbs-searchprefix";s:16:"You searched for";s:15:"breadcrumbs-sep";s:7:"&raquo;";s:23:"post_types-post-maintax";i:0;s:36:"post_types-kbe_knowledgebase-maintax";i:0;s:30:"taxonomy-kbe_taxonomy-ptparent";i:0;s:26:"taxonomy-kbe_tags-ptparent";i:0;}', 'yes'),
 (534, 'wpseo_xml', 'a:19:{s:22:"disable_author_sitemap";b:1;s:22:"disable_author_noposts";b:1;s:16:"enablexmlsitemap";b:0;s:16:"entries-per-page";i:1000;s:14:"excluded-posts";s:0:"";s:38:"user_role-administrator-not_in_sitemap";b:0;s:31:"user_role-editor-not_in_sitemap";b:0;s:31:"user_role-author-not_in_sitemap";b:0;s:36:"user_role-contributor-not_in_sitemap";b:0;s:35:"user_role-subscriber-not_in_sitemap";b:0;s:30:"post_types-post-not_in_sitemap";b:0;s:30:"post_types-page-not_in_sitemap";b:0;s:36:"post_types-attachment-not_in_sitemap";b:1;s:34:"taxonomies-category-not_in_sitemap";b:0;s:34:"taxonomies-post_tag-not_in_sitemap";b:0;s:37:"taxonomies-post_format-not_in_sitemap";b:0;s:38:"taxonomies-kbe_taxonomy-not_in_sitemap";b:0;s:34:"taxonomies-kbe_tags-not_in_sitemap";b:0;s:43:"post_types-kbe_knowledgebase-not_in_sitemap";b:0;}', 'yes'),
 (539, 'sm_rewrite_done', '$Id: sitemap-loader.php 937300 2014-06-23 18:04:11Z arnee $', 'yes'),
-(646, 'sm_options', 'a:51:{s:18:"sm_b_prio_provider";s:41:"GoogleSitemapGeneratorPrioByCountProvider";s:9:"sm_b_ping";b:1;s:10:"sm_b_stats";b:0;s:12:"sm_b_pingmsn";b:1;s:12:"sm_b_autozip";b:1;s:11:"sm_b_memory";s:0:"";s:9:"sm_b_time";i:-1;s:18:"sm_b_style_default";b:1;s:10:"sm_b_style";s:0:"";s:12:"sm_b_baseurl";s:0:"";s:11:"sm_b_robots";b:1;s:9:"sm_b_html";b:1;s:12:"sm_b_exclude";a:0:{}s:17:"sm_b_exclude_cats";a:0:{}s:10:"sm_in_home";b:1;s:11:"sm_in_posts";b:1;s:15:"sm_in_posts_sub";b:0;s:11:"sm_in_pages";b:1;s:10:"sm_in_cats";b:0;s:10:"sm_in_arch";b:0;s:10:"sm_in_auth";b:0;s:10:"sm_in_tags";b:0;s:9:"sm_in_tax";a:0:{}s:17:"sm_in_customtypes";a:0:{}s:13:"sm_in_lastmod";b:1;s:10:"sm_cf_home";s:5:"daily";s:11:"sm_cf_posts";s:7:"monthly";s:11:"sm_cf_pages";s:6:"weekly";s:10:"sm_cf_cats";s:6:"weekly";s:10:"sm_cf_auth";s:6:"weekly";s:15:"sm_cf_arch_curr";s:5:"daily";s:14:"sm_cf_arch_old";s:6:"yearly";s:10:"sm_cf_tags";s:6:"weekly";s:10:"sm_pr_home";d:1;s:11:"sm_pr_posts";d:0.59999999999999997779553950749686919152736663818359375;s:15:"sm_pr_posts_min";d:0.200000000000000011102230246251565404236316680908203125;s:11:"sm_pr_pages";d:0.59999999999999997779553950749686919152736663818359375;s:10:"sm_pr_cats";d:0.299999999999999988897769753748434595763683319091796875;s:10:"sm_pr_arch";d:0.299999999999999988897769753748434595763683319091796875;s:10:"sm_pr_auth";d:0.299999999999999988897769753748434595763683319091796875;s:10:"sm_pr_tags";d:0.299999999999999988897769753748434595763683319091796875;s:12:"sm_i_donated";b:0;s:17:"sm_i_hide_donated";b:0;s:17:"sm_i_install_date";i:1450344152;s:14:"sm_i_hide_note";b:0;s:15:"sm_i_hide_works";b:0;s:16:"sm_i_hide_donors";b:0;s:9:"sm_i_hash";s:20:"94d06ede62078ddbe0b4";s:13:"sm_i_lastping";i:1450677661;s:16:"sm_i_supportfeed";b:1;s:22:"sm_i_supportfeed_cache";i:1450346001;}', 'yes'),
-(647, 'sm_status', 'O:28:"GoogleSitemapGeneratorStatus":4:{s:39:"\0GoogleSitemapGeneratorStatus\0startTime";d:1450677659.406208038330078125;s:37:"\0GoogleSitemapGeneratorStatus\0endTime";d:1450677660.4623420238494873046875;s:41:"\0GoogleSitemapGeneratorStatus\0pingResults";a:2:{s:6:"google";a:5:{s:9:"startTime";d:1450677659.4567139148712158203125;s:7:"endTime";d:1450677659.8432629108428955078125;s:7:"success";b:0;s:3:"url";s:95:"http://www.google.com/webmasters/sitemaps/ping?sitemap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:6:"Google";}s:4:"bing";a:5:{s:9:"startTime";d:1450677659.8892691135406494140625;s:7:"endTime";d:1450677660.283318996429443359375;s:7:"success";b:1;s:3:"url";s:88:"http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:4:"Bing";}}s:38:"\0GoogleSitemapGeneratorStatus\0autoSave";b:1;}', 'no'),
+(646, 'sm_options', 'a:51:{s:18:"sm_b_prio_provider";s:41:"GoogleSitemapGeneratorPrioByCountProvider";s:9:"sm_b_ping";b:1;s:10:"sm_b_stats";b:0;s:12:"sm_b_pingmsn";b:1;s:12:"sm_b_autozip";b:1;s:11:"sm_b_memory";s:0:"";s:9:"sm_b_time";i:-1;s:18:"sm_b_style_default";b:1;s:10:"sm_b_style";s:0:"";s:12:"sm_b_baseurl";s:0:"";s:11:"sm_b_robots";b:1;s:9:"sm_b_html";b:1;s:12:"sm_b_exclude";a:0:{}s:17:"sm_b_exclude_cats";a:0:{}s:10:"sm_in_home";b:1;s:11:"sm_in_posts";b:1;s:15:"sm_in_posts_sub";b:0;s:11:"sm_in_pages";b:1;s:10:"sm_in_cats";b:0;s:10:"sm_in_arch";b:0;s:10:"sm_in_auth";b:0;s:10:"sm_in_tags";b:0;s:9:"sm_in_tax";a:0:{}s:17:"sm_in_customtypes";a:0:{}s:13:"sm_in_lastmod";b:1;s:10:"sm_cf_home";s:5:"daily";s:11:"sm_cf_posts";s:7:"monthly";s:11:"sm_cf_pages";s:6:"weekly";s:10:"sm_cf_cats";s:6:"weekly";s:10:"sm_cf_auth";s:6:"weekly";s:15:"sm_cf_arch_curr";s:5:"daily";s:14:"sm_cf_arch_old";s:6:"yearly";s:10:"sm_cf_tags";s:6:"weekly";s:10:"sm_pr_home";d:1;s:11:"sm_pr_posts";d:0.59999999999999998;s:15:"sm_pr_posts_min";d:0.20000000000000001;s:11:"sm_pr_pages";d:0.59999999999999998;s:10:"sm_pr_cats";d:0.29999999999999999;s:10:"sm_pr_arch";d:0.29999999999999999;s:10:"sm_pr_auth";d:0.29999999999999999;s:10:"sm_pr_tags";d:0.29999999999999999;s:12:"sm_i_donated";b:0;s:17:"sm_i_hide_donated";b:0;s:17:"sm_i_install_date";i:1450344152;s:14:"sm_i_hide_note";b:0;s:15:"sm_i_hide_works";b:0;s:16:"sm_i_hide_donors";b:0;s:9:"sm_i_hash";s:20:"94d06ede62078ddbe0b4";s:13:"sm_i_lastping";i:1450677661;s:16:"sm_i_supportfeed";b:1;s:22:"sm_i_supportfeed_cache";i:1450346001;}', 'yes'),
+(647, 'sm_status', 'O:28:"GoogleSitemapGeneratorStatus":4:{s:39:"\0GoogleSitemapGeneratorStatus\0startTime";d:1450677659.406208;s:37:"\0GoogleSitemapGeneratorStatus\0endTime";d:1450677660.462342;s:41:"\0GoogleSitemapGeneratorStatus\0pingResults";a:2:{s:6:"google";a:5:{s:9:"startTime";d:1450677659.4567139;s:7:"endTime";d:1450677659.8432629;s:7:"success";b:0;s:3:"url";s:95:"http://www.google.com/webmasters/sitemaps/ping?sitemap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:6:"Google";}s:4:"bing";a:5:{s:9:"startTime";d:1450677659.8892691;s:7:"endTime";d:1450677660.283319;s:7:"success";b:1;s:3:"url";s:88:"http://www.bing.com/webmaster/ping.aspx?siteMap=http%3A%2F%2Floansolutions%2Fsitemap.xml";s:4:"name";s:4:"Bing";}}s:38:"\0GoogleSitemapGeneratorStatus\0autoSave";b:1;}', 'no'),
 (1105, 'WPLANG', '', 'yes'),
 (1142, 'category_children', 'a:0:{}', 'yes'),
 (1143, 'kbe_taxonomy_children', 'a:0:{}', 'yes'),
@@ -2451,7 +2451,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -2471,7 +2471,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:2:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"80a9d516eda8ce4563d7e3241d2d4dd41a530a8a65944da8fb62f0c7d5f5c3a0";a:4:{s:10:"expiration";i:1450849420;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450676620;}}'),
+(14, 1, 'session_tokens', 'a:4:{s:64:"f9d204c13a0c4e306cda523fc5c50240af34eff20e953c588029347a251f55b8";a:4:{s:10:"expiration";i:1451378304;s:2:"ip";s:11:"172.17.42.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450168704;}s:64:"80a9d516eda8ce4563d7e3241d2d4dd41a530a8a65944da8fb62f0c7d5f5c3a0";a:4:{s:10:"expiration";i:1450849420;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0";s:5:"login";i:1450676620;}s:64:"53412fdc505963a68108552a545a3e4d359e75430149092b2b308f17096cc76f";a:4:{s:10:"expiration";i:1450858096;s:2:"ip";s:14:"108.162.208.29";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450685296;}s:64:"1ea20517b6f4dd049be77f2f90890350d76998dc7bfca89a494c96c38419bfd9";a:4:{s:10:"expiration";i:1451895077;s:2:"ip";s:14:"108.162.208.29";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36";s:5:"login";i:1450685477;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '713'),
 (16, 1, 'wporg_favorites', ''),
 (17, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
@@ -2489,9 +2489,50 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (41, 3, 'admin_color', 'fresh'),
 (42, 3, 'use_ssl', '0'),
 (43, 3, 'show_admin_bar_front', 'true'),
-(44, 3, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
-(45, 3, 'wp_user_level', '10'),
-(46, 3, 'dismissed_wp_pointers', '') ;
+(44, 3, 'wp_capabilities', 'a:1:{s:11:"contributor";b:1;}'),
+(45, 3, 'wp_user_level', '1'),
+(46, 3, 'dismissed_wp_pointers', ''),
+(47, 1, 'default_password_nag', ''),
+(48, 3, '_yoast_wpseo_profile_updated', '1450685546'),
+(49, 3, 'wpseo_title', ''),
+(50, 3, 'wpseo_metadesc', ''),
+(51, 3, 'wpseo_metakey', ''),
+(52, 3, 'wpseo_excludeauthorsitemap', ''),
+(53, 3, 'googleplus', ''),
+(54, 3, 'twitter', ''),
+(55, 3, 'facebook', ''),
+(56, 4, 'nickname', 'castofclowns'),
+(57, 4, 'first_name', ''),
+(58, 4, 'last_name', ''),
+(59, 4, 'description', ''),
+(60, 4, 'rich_editing', 'true'),
+(61, 4, 'comment_shortcuts', 'false'),
+(62, 4, 'admin_color', 'fresh'),
+(63, 4, 'use_ssl', '0'),
+(64, 4, 'show_admin_bar_front', 'true'),
+(65, 4, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
+(66, 4, 'wp_user_level', '10'),
+(67, 4, 'dismissed_wp_pointers', ''),
+(68, 5, 'nickname', 'airene'),
+(69, 5, 'first_name', ''),
+(70, 5, 'last_name', ''),
+(71, 5, 'description', ''),
+(72, 5, 'rich_editing', 'true'),
+(73, 5, 'comment_shortcuts', 'false'),
+(74, 5, 'admin_color', 'fresh'),
+(75, 5, 'use_ssl', '0'),
+(76, 5, 'show_admin_bar_front', 'true'),
+(77, 5, 'wp_capabilities', 'a:1:{s:6:"author";b:1;}'),
+(78, 5, 'wp_user_level', '2'),
+(79, 5, 'dismissed_wp_pointers', ''),
+(80, 5, '_yoast_wpseo_profile_updated', '1450685756'),
+(81, 5, 'wpseo_title', ''),
+(82, 5, 'wpseo_metadesc', ''),
+(83, 5, 'wpseo_metakey', ''),
+(84, 5, 'wpseo_excludeauthorsitemap', ''),
+(85, 5, 'googleplus', ''),
+(86, 5, 'twitter', ''),
+(87, 5, 'facebook', '') ;
 
 #
 # End of data contents of table `wp_usermeta`
@@ -2524,15 +2565,17 @@ CREATE TABLE `wp_users` (
   PRIMARY KEY (`ID`),
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
 # Data contents of table `wp_users`
 #
 INSERT INTO `wp_users` ( `ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'admin', '$P$B0YldqOPziqeP.BUq2IV4BxUVYybCk1', 'admin', 'alex@loansolutions.ph', '', '2015-12-14 10:12:52', '', 0, 'admin'),
-(3, 'john', '$P$BKFE9jPWYU0.8dLAjrCufZKP8hSg8Y1', 'john', 'jraalu2000@gmail.com', '', '2015-12-18 10:49:30', '1450435771:$P$BZGCBtDuxPlTSOBPQW7BIpuJ1.ZHa60', 0, 'john') ;
+(1, 'admin', '$P$BCr66o.DstRTk.c77TyOFO3MI0wtmn.', 'admin', 'alex@loansolutions.ph', '', '2015-12-14 10:12:52', '', 0, 'admin'),
+(3, 'john', '$P$BuN3rkPMCHXy0voWUfxpVpx9aNgVnp/', 'john', 'jraalu2000@gmail.com', '', '2015-12-18 10:49:30', '1450435771:$P$BZGCBtDuxPlTSOBPQW7BIpuJ1.ZHa60', 0, 'john'),
+(4, 'castofclowns', '$P$BC9pbp8IiTWLQWiT.HzNkKn0I5bS201', 'castofclowns', 'dlao@loansolutions.ph', '', '2015-12-21 08:13:23', '1450685603:$P$B.50xtS3TbscfHN.5s.ZKoBk3AFwTu0', 0, 'castofclowns'),
+(5, 'airene', '$P$BhgZ15cBTOX9wtoloBkPaXuzNKfPLK1', 'airene', 'airenevillagonzalo@gmai.com', '', '2015-12-21 08:14:38', '1450685679:$P$BhW0z1vkavilp1ewk3IJsAz8OY0xyj0', 0, 'airene') ;
 
 #
 # End of data contents of table `wp_users`
